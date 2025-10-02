@@ -6,7 +6,7 @@ Este repositorio contiene el desarrollo de un modelo de Machine Learning para pr
 
 El objetivo principal es construir un modelo de clasificación capaz de asignar a cada estudiante una de las cuatro categorías de rendimiento definidas. Para lograrlo, se realiza un proceso completo que abarca desde la exploración y limpieza de los datos hasta el entrenamiento y la evaluación de diferentes algoritmos de Machine Learning.
 
-Este proyecto se desarrolla en el marco de la competencia de Kaggle para el curso de [Nombre de la Materia/Curso].
+Este proyecto se desarrolla en el marco de la competencia de Kaggle para el curso de Introduccion a la Inteligencia Artificial.
 
 ## 📂 Estructura del Repositorio
 
