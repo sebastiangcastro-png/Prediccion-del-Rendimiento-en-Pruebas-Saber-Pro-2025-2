@@ -2,37 +2,67 @@
 
 Este repositorio contiene el desarrollo de un modelo de Machine Learning para predecir el rendimiento de los estudiantes en las pruebas Saber Pro, basándose en datos socioeconómicos y académicos.
 
+## 👥 Autores
+
+Este proyecto fue desarrollado por:
+
+| Nombre Completo | Número de Identificación | Carrera Universitaria |
+| :--- | :--- | :--- |
+| **Yorladys Argumedo Lozano** | `1038824209` | Ingeniería Industrial Virtual |
+| **Sebastian Gabriel Castro** | `1029720632` | Ingeniería Industrial Virtual |
+
+## 🎥 Entregas y Videos
+
+A continuación se presentan los enlaces a las sustentaciones de las entregas del curso:
+
+*   **Entrega 2 (Preprocesado):** [Ver en YouTube](https://youtu.be/771uPZHF0mw)
+*   **Entrega 3 (Final - Solución Kaggle):** [PEGAR AQUÍ EL ENLACE A TU VIDEO FINAL DE YOUTUBE]
+
+---
+
 ## 📝 Descripción del Proyecto
 
-El objetivo principal es construir un modelo de clasificación capaz de asignar a cada estudiante una de las cuatro categorías de rendimiento definidas. Para lograrlo, se realiza un proceso completo que abarca desde la exploración y limpieza de los datos hasta el entrenamiento y la evaluación de diferentes algoritmos de Machine Learning.
+El objetivo principal es construir un modelo de clasificación capaz de asignar a cada estudiante una de las cuatro categorías de rendimiento definidas (**Bajo, Medio-Bajo, Medio-Alto, Alto**). Para lograrlo, se realiza un proceso completo que abarca desde la exploración y limpieza de los datos hasta el entrenamiento y la evaluación de diferentes algoritmos de Machine Learning.
 
 Este proyecto se desarrolla en el marco de la competencia de Kaggle para el curso de **Introducción a la Inteligencia Artificial**.
 
+## 🚀 Aproximación a la Solución Final (Notebook 99)
+
+Para la solución definitiva enviada a Kaggle, implementamos un pipeline robusto que incluye:
+
+1.  **Preprocesamiento:**
+    *   Imputación de valores numéricos usando la mediana.
+    *   Imputación de valores categóricos faltantes con una constante.
+    *   Codificación de variables categóricas mediante **One-Hot Encoding**.
+    *   Escalado de variables numéricas con **StandardScaler**.
+2.  **Modelo Seleccionado:**
+    *   Se utilizó un **Random Forest Classifier**. Este modelo fue seleccionado por su capacidad para manejar relaciones no lineales y su robustez frente al sobreajuste (overfitting) en comparación con otros modelos probados.
+3.  **Resultados:**
+    *   Esta estrategia nos permitió generar el archivo `submission.csv` respetando los IDs del conjunto de test de la competencia.
+
 ## 📂 Estructura del Repositorio
 
-El proyecto está organizado en varios notebooks de Jupyter, cada uno enfocado en una etapa específica del proceso:
+El proyecto está organizado siguiendo estrictamente los requisitos de la entrega:
 
-*   **`01 - exploración.ipynb`**: Notebook de la **Entrega 1**. Contiene el código para la carga de los datos (`train.csv` y `test.csv`) y un análisis exploratorio inicial (EDA) para entender la distribución, los tipos de datos y los valores faltantes.
-*   **`02 - preprocesado.ipynb`**: Notebook de la **Entrega 2**. Aquí se realizan las tareas de limpieza, manejo de valores nulos, transformación de variables categóricas a numéricas (ej. One-Hot Encoding) y la ingeniería de características (feature engineering).  
-    🎥 **Presentación Entrega 2:** [Ver en YouTube](https://youtu.be/771uPZHF0mw)
+*   **`README.md`**: Información general, autores y enlaces a videos.
+*   **`01 - exploración.ipynb`**: (Entrega 1) Carga de datos (`train.csv`, `test.csv`) y Análisis Exploratorio de Datos (EDA).
+*   **`02 - preprocesado.ipynb`**: (Entrega 2) Limpieza, manejo de nulos e ingeniería de características inicial.
+*   **`03 - modelo con SVM.ipynb`**: Notebook experimental donde se prueba una aproximación usando *Support Vector Machines*.
+*   **`04 - modelo con KNN.ipynb`**: Notebook experimental utilizando el algoritmo de *K-Nearest Neighbors*.
+*   **`99 - modelo solución.ipynb`**: **(Entrega Final)** Notebook autocontenido que ejecuta el pipeline completo: carga datos, preprocesa, entrena el modelo Random Forest y genera el archivo `submission.csv` para Kaggle.
 
 ## 💻 Tecnologías Utilizadas
 
 Para el desarrollo de este proyecto se utilizaron las siguientes herramientas y librerías de Python:
 
 *   **Python 3.x**
-*   **Pandas:** Para la manipulación y análisis de datos.
-*   **NumPy:** Para operaciones numéricas eficientes.
-*   **Scikit-learn:** Para el entrenamiento y evaluación de los modelos de Machine Learning.
-*   **Matplotlib y Seaborn:** Para la visualización de datos y la creación de gráficos.
-*   **Jupyter Notebook / Google Colab:** Como entorno de desarrollo interactivo.
+*   **Pandas:** Manipulación y análisis de datos tabulares.
+*   **NumPy:** Operaciones numéricas eficientes.
+*   **Scikit-learn:** Entrenamiento de modelos, pipelines y preprocesamiento.
+*   **Matplotlib y Seaborn:** Visualización de datos.
+*   **Kaggle API:** Para la descarga automatizada del dataset.
+*   **Google Colab:** Entorno de desarrollo.
 
-## 👥 Autores
+---
 
-Este proyecto fue desarrollado por:
-
-| Nombre Completo               | Número de Identificación | Carrera Universitaria         |
-| ----------------------------- | ------------------------ | ----------------------------- |
-| **Yorladys Argumedo Lozano** | `1038824209`             | Ingeniería Industrial Virtual |
-| **Sebastian Gabriel Castro**  | `1029720632`             | Ingeniería Industrial Virtual |
 
