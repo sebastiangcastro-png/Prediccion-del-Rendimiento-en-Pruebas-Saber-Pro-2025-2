@@ -16,7 +16,7 @@ Este proyecto fue desarrollado por:
 A continuación se presentan los enlaces a las sustentaciones de las entregas del curso:
 
 *   **Entrega 2 (Preprocesado):** [Ver en YouTube](https://youtu.be/771uPZHF0mw)
-*   **Entrega 3 (Final - Solución Kaggle):** [PEGAR AQUÍ EL ENLACE A TU VIDEO FINAL DE YOUTUBE]
+*   **Entrega 3 (Final - Solución Kaggle):** [VIDEO FINAL DE YOUTUB](https://youtu.be/yFXWDBA53HQ)
 
 ---
 
